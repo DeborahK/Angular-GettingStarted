@@ -3,7 +3,6 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {IProduct} from './product';
 import {ProductService} from './product.service';
-//import {MovieFilterPipe} from './movieFilter.pipe';
 import {StarComponent} from "../shared/star.component";
 
 @Component({
