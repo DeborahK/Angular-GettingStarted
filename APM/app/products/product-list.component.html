@@ -45,8 +45,8 @@
                         </td>
                         <td>{{ product.productCode }}</td>
                         <td>{{ convertToDate(product.releaseDate) | date }}</td>
-                        <td>{{ product.price | currency }}</td>
-                        <td>{{ product.starRating | number }}</td>
+                        <td>{{ product.price | currency:"USD":true }}</td>
+                        <td><star [rating]="product.starRating"></star></td>
                     </tr>
                 </tbody>
             </table>

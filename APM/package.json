@@ -1,5 +1,5 @@
 {
-  "name": "movieHunter",
+  "name": "movie-hunter",
   "version": "1.0.0",
   "scripts": {
     "tsc": "tsc",

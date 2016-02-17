@@ -24,11 +24,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">Price:</div>
-                    <div class="col-md-6">{{product.price|currency}}</div>
+                    <div class="col-md-6">{{product.price|currency:"USD":true}}</div>
                 </div>
                 <div class="row">
                     <div class="col-md-3">5 Star Rating:</div>
-                    <div class="col-md-6">{{product.starRating|number}}</div>
+                    <div class="col-md-6"><star [rating]="product.starRating"></star></div>
                 </div>
             </div>
 
