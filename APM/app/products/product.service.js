@@ -25,31 +25,23 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable'], function(
             ProductService = (function () {
                 function ProductService(_http) {
                     this._http = _http;
-                    this._productUrl = 'app/products/products.json';
+                    this._productUrl = 'api/products/products.json';
                 }
                 ProductService.prototype.getProducts = function () {
                     return this._http.get(this._productUrl)
-                        .map(function (res) { return res.json(); })
+                        .map(function (response) { return response.json(); })
                         .do(function (data) { return console.log("All: " + data); })
                         .catch(this.handleError);
                 };
                 ProductService.prototype.getProduct = function (id) {
-                    var _this = this;
-                    return this._http.get(this._productUrl)
-                        .map(function (res) { return _this.handleMap(res, id); })
-                        .do(function (data) { return console.log("One: " + data); })
-                        .catch(this.handleError);
+                    return this.getProducts()
+                        .map(function (products) { return products.find(function (p) { return p.productId === id; }); });
                 };
                 ProductService.prototype.handleError = function (error) {
                     // in a real world app, we may send the server to some remote logging infrastructure
                     // instead of just logging it to the console
                     console.error(error);
                     return Observable_1.Observable.throw(error.json().error || 'Server error');
-                };
-                ProductService.prototype.handleMap = function (res, id) {
-                    var data = res.json();
-                    var filtered = data.filter(function (p) { return p.productId === id; });
-                    return filtered[0];
                 };
                 ProductService = __decorate([
                     core_1.Injectable(), 

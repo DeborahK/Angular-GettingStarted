@@ -3,7 +3,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {IProduct} from './product';
 import {ProductService} from './product.service';
-import {StarComponent} from "../shared/star.component";
+import {StarComponent} from '../shared/star.component';
 
 @Component({
     templateUrl: 'app/products/product-list.component.html',
@@ -11,7 +11,7 @@ import {StarComponent} from "../shared/star.component";
     directives: [ROUTER_DIRECTIVES, StarComponent]
 })
 export class ProductListComponent implements OnInit {
-    pageTitle: string = "Product List";
+    pageTitle: string = 'Product List';
     showImage: boolean = false;
     products: IProduct[];
     errorMessage: string;

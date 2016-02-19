@@ -7,20 +7,18 @@ import {IProduct}       from './product';
 export class ProductService {
     constructor(private _http: Http) { }
 
-    private _productUrl = 'app/products/products.json';
+    private _productUrl = 'api/products/products.json';
 
     getProducts() {
         return this._http.get(this._productUrl)
-            .map(res => <IProduct[]> res.json())
+            .map((response: Response) => <IProduct[]> response.json())
             .do(data => console.log("All: " + data))
             .catch(this.handleError);
     }
 
     getProduct(id: number) {
-        return this._http.get(this._productUrl)
-            .map(res => this.handleMap(res, id))
-            .do(data => console.log("One: " + data))
-            .catch(this.handleError);
+        return this.getProducts()
+            .map((products: IProduct[]) => products.find(p => p.productId === id));       
     }
 
     private handleError(error: Response) {
@@ -28,11 +26,5 @@ export class ProductService {
         // instead of just logging it to the console
         console.error(error);
         return Observable.throw(error.json().error || 'Server error');
-    }
-
-    private handleMap(res: any, id: number) {
-        let data =<IProduct[]> res.json();
-        let filtered = data.filter(p => p.productId === id);
-        return <IProduct> filtered[0];
     }
 }

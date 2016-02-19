@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './product.service', "../shared/star.component"], function(exports_1) {
+System.register(['angular2/core', 'angular2/router', './product.service', '../shared/star.component'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -26,14 +26,17 @@ System.register(['angular2/core', 'angular2/router', './product.service', "../sh
             }],
         execute: function() {
             ProductDetailComponent = (function () {
-                function ProductDetailComponent(_productService, _routeParams) {
+                function ProductDetailComponent(_productService, _router, _routeParams) {
                     this._productService = _productService;
+                    this._router = _router;
                     this._routeParams = _routeParams;
-                    this.pageTitle = "Product Detail";
+                    this.pageTitle = 'Product Detail';
                 }
                 ProductDetailComponent.prototype.ngOnInit = function () {
-                    var id = parseInt(this._routeParams.get('id'), 10);
-                    this.getProduct(id);
+                    if (!this.product) {
+                        var id = +this._routeParams.get('id');
+                        this.getProduct(id);
+                    }
                 };
                 ProductDetailComponent.prototype.getProduct = function (id) {
                     var _this = this;
@@ -43,13 +46,16 @@ System.register(['angular2/core', 'angular2/router', './product.service', "../sh
                 ProductDetailComponent.prototype.convertToDate = function (dateString) {
                     return new Date(dateString);
                 };
+                ProductDetailComponent.prototype.onBack = function () {
+                    this._router.navigate(['Products']);
+                };
                 ProductDetailComponent = __decorate([
                     core_1.Component({
                         templateUrl: 'app/products/product-detail.component.html',
                         styleUrls: ['app/products/product-detail.component.css'],
-                        directives: [router_1.ROUTER_DIRECTIVES, star_component_1.StarComponent]
+                        directives: [star_component_1.StarComponent]
                     }), 
-                    __metadata('design:paramtypes', [product_service_1.ProductService, router_1.RouteParams])
+                    __metadata('design:paramtypes', [product_service_1.ProductService, router_1.Router, router_1.RouteParams])
                 ], ProductDetailComponent);
                 return ProductDetailComponent;
             })();

@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/http', 'angular2/router', './home/welcome.component', './products/product-list.component', './products/product-detail.component', './products/product.service'], function(exports_1) {
+System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx', './home/welcome.component', './products/product-list.component', './products/product-detail.component', './products/product.service'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -21,6 +21,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './home/we
             function (router_1_1) {
                 router_1 = router_1_1;
             },
+            function (_1) {},
             function (welcome_component_1_1) {
                 welcome_component_1 = welcome_component_1_1;
             },
@@ -36,15 +37,16 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './home/we
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.pageTitle = "Acme Product Management";
+                    this.pageTitle = 'Acme Product Management';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'pm-app',
-                        template: "\n    <div>\n        <nav class=\"navbar navbar-default\">\n            <div class=\"container-fluid\">\n                <a class=\"navbar-brand\">{{pageTitle}}</a>\n                <ul class=\"nav navbar-nav\">\n                    <li><a [routerLink]=\"['Welcome']\">Home</a></li>\n                    <li><a [routerLink]=\"['Products']\">Product List</a></li>\n                </ul>\n            </div>\n        </nav>\n        <div class=\"container\">\n            <router-outlet></router-outlet>\n        </div>\n     </div>\n     ",
+                        template: "\n    <div>\n        <nav class='navbar navbar-default'>\n            <div class='container-fluid'>\n                <a class='navbar-brand'>{{pageTitle}}</a>\n                <ul class='nav navbar-nav'>\n                    <li><a [routerLink]=\"['Welcome']\">Home</a></li>\n                    <li><a [routerLink]=\"['Products']\">Product List</a></li>\n                </ul>\n            </div>\n        </nav>\n        <div class='container'>\n            <router-outlet></router-outlet>\n        </div>\n     </div>\n     ",
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
                             http_1.HTTP_PROVIDERS,
+                            router_1.ROUTER_PROVIDERS,
                             product_service_1.ProductService
                         ]
                     }),
