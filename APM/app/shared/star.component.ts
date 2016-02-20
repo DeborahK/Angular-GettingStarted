@@ -1,7 +1,7 @@
 import {Component, Input, OnChanges } from 'angular2/core';
 
 @Component({
-    selector: 'star',
+    selector: 'ai-star',
     templateUrl: 'app/shared/star.component.html',
     styleUrls: ['app/shared/star.component.css']
 })
