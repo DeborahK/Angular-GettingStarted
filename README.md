@@ -1,4 +1,4 @@
-# Angular2-APM
+# Angular2-Getting Started
 Materials for the "Angular 2: Getting Started" course on Pluralsight.
 
 `APM - Start`: The starter files. Use this to code along with the course.
