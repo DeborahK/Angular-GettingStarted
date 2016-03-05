@@ -3,6 +3,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {IProduct} from './product';
 import {ProductService} from './product.service';
+import {ProductFilterPipe} from './product-filter.pipe';
 
 import {FilterEntryComponent} from '../shared/filter-entry.component';
 import {StarComponent} from '../shared/star.component';
@@ -12,7 +13,8 @@ import {StarComponent} from '../shared/star.component';
     styleUrls: ['app/products/product-list.component.css'],
     directives: [ROUTER_DIRECTIVES, 
                 FilterEntryComponent,
-                StarComponent]
+                StarComponent],
+    pipes: [ProductFilterPipe]
 })
 export class ProductListComponent implements OnInit {
     pageTitle: string = 'Product List';
