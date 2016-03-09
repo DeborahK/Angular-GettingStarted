@@ -4,13 +4,13 @@
   "author": "Deborah Kurata",
   "description": "Package for the Acme Product Management sample application",
   "scripts": {
-    "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "live": "live-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "typings" : "typings"
+    "typings" : "typings",
+    "postinstall": "typings install"
   },
   "license": "ISC",
   "dependencies": {
