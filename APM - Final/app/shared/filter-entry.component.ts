@@ -1,4 +1,4 @@
-import {Component, Output, EventEmitter}  from 'angular2/core';
+import { Component, Output, EventEmitter }  from 'angular2/core';
 
 @Component({
     selector: 'ai-filter-entry',

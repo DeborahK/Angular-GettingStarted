@@ -1,9 +1,9 @@
-import {Component, OnInit} from 'angular2/core';
-import {RouteParams, Router} from 'angular2/router';
+import { Component, OnInit } from 'angular2/core';
+import { RouteParams, Router } from 'angular2/router';
 
-import {IProduct} from './product';
-import {ProductService} from './product.service';
-import {StarComponent} from '../shared/star.component';
+import { IProduct } from './product';
+import { ProductService } from './product.service';
+import { StarComponent } from '../shared/star.component';
 
 @Component({
     templateUrl: 'app/products/product-detail.component.html',
@@ -34,7 +34,7 @@ export class ProductDetailComponent implements OnInit {
             error => this.errorMessage = <any>error);
     }
 
-    convertToDate(dateString): Date {
+    convertToDate(dateString: string): Date {
         return new Date(dateString);
     }
 

@@ -1,12 +1,12 @@
-import {Component, OnInit}  from 'angular2/core';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import { Component, OnInit }  from 'angular2/core';
+import { ROUTER_DIRECTIVES } from 'angular2/router';
 
-import {IProduct} from './product';
-import {ProductService} from './product.service';
-import {ProductFilterPipe} from './product-filter.pipe';
+import { IProduct } from './product';
+import { ProductService } from './product.service';
+import { ProductFilterPipe } from './product-filter.pipe';
 
-import {FilterEntryComponent} from '../shared/filter-entry.component';
-import {StarComponent} from '../shared/star.component';
+import { FilterEntryComponent } from '../shared/filter-entry.component';
+import { StarComponent } from '../shared/star.component';
 
 @Component({
     templateUrl: 'app/products/product-list.component.html',
@@ -39,11 +39,11 @@ export class ProductListComponent implements OnInit {
         this.showImage = !this.showImage;
     }
 
-    convertToDate(dateString): Date {
+    convertToDate(dateString: string): Date {
         return new Date(dateString);
     }
     
-    onFilterChanged(filter) {
+    onFilterChanged(filter: string) {
         this.listFilter = filter;
     }
 }
