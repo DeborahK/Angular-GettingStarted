@@ -18,8 +18,10 @@ import { StarComponent } from '../shared/star.component';
 })
 export class ProductListComponent implements OnInit {
     pageTitle: string = 'Product List';
-    listFilter: string = "";
+    imageWidth: number = 50;
+    imageMargin: number = 2;
     showImage: boolean = false;
+    listFilter: string = "";
     products: IProduct[];
     errorMessage: string;
 

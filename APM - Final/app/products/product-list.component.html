@@ -5,7 +5,17 @@
 
     <!-- Filter the Products   -->
     <div class='panel-body'>
-        <ai-filter-entry (filterChanged)="onFilterChanged($event)"></ai-filter-entry>
+        <div class='row'>
+            <div class='col-md-2'>Filter by:</div>
+            <div class='col-md-4'>
+                <input type='text' [(ngModel)]='listFilter' />
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-6'>
+                <h3>Filtered by: {{listFilter}} </h3>
+            </div>
+        </div>
 
         <div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
 
@@ -28,7 +38,11 @@
                 <tbody>
                     <tr *ngFor='#product of products | productFilter:listFilter'>
                         <td>
-                            <img *ngIf='showImage' [src]='product.imageUrl' [style.width.px]='50' [style.margin.px]='2' [title]='product.productName'>
+                            <img *ngIf='showImage'
+                                 [src]='product.imageUrl'
+                                 [title]='product.productName | uppercase'
+                                 [style.width.px]='imageWidth' 
+                                 [style.margin.px]='imageMargin'>
                         </td>
                         <td> <a [routerLink]="['ProductDetail',{id: product.productId}]">
                             {{product.productName}}
@@ -37,7 +51,7 @@
                         <td>{{ product.productCode }}</td>
                         <td>{{ convertToDate(product.releaseDate) | date }}</td>
                         <td>{{ product.price | currency:'USD':true }}</td>
-                        <td><ai-star [rating]='product.starRating'></ai-star></td>
+                        <td><in-star [rating]='product.starRating'></in-star></td>
                     </tr>
                 </tbody>
             </table>
