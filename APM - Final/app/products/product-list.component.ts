@@ -5,14 +5,12 @@ import { IProduct } from './product';
 import { ProductService } from './product.service';
 import { ProductFilterPipe } from './product-filter.pipe';
 
-import { FilterEntryComponent } from '../shared/filter-entry.component';
 import { StarComponent } from '../shared/star.component';
 
 @Component({
     templateUrl: 'app/products/product-list.component.html',
     styleUrls: ['app/products/product-list.component.css'],
     directives: [ROUTER_DIRECTIVES, 
-                FilterEntryComponent,
                 StarComponent],
     pipes: [ProductFilterPipe]
 })
@@ -39,10 +37,6 @@ export class ProductListComponent implements OnInit {
     
     toggleImage(): void {
         this.showImage = !this.showImage;
-    }
-
-    convertToDate(dateString: string): Date {
-        return new Date(dateString);
     }
     
     onFilterChanged(filter: string) {

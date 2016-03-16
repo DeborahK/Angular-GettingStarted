@@ -49,7 +49,7 @@
                             </a>
                         </td>
                         <td>{{ product.productCode }}</td>
-                        <td>{{ convertToDate(product.releaseDate) | date }}</td>
+                        <td>{{ product.releaseDate }}</td>
                         <td>{{ product.price | currency:'USD':true }}</td>
                         <td><in-star [rating]='product.starRating'></in-star></td>
                     </tr>

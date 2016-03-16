@@ -34,10 +34,6 @@ export class ProductDetailComponent implements OnInit {
             error => this.errorMessage = <any>error);
     }
 
-    convertToDate(dateString: string): Date {
-        return new Date(dateString);
-    }
-
     onBack() {
         this._router.navigate(['Products']);
     }
