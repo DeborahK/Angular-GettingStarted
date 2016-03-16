@@ -1,3 +1,7 @@
 .crop {
     overflow: hidden;
 }
+
+span {
+    cursor: pointer;
+}
