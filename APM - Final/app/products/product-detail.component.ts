@@ -7,7 +7,6 @@ import { StarComponent } from '../shared/star.component';
 
 @Component({
     templateUrl: 'app/products/product-detail.component.html',
-    styleUrls: ['app/products/product-detail.component.css'],
     directives: [StarComponent]
 })
 export class ProductDetailComponent implements OnInit {
@@ -23,6 +22,7 @@ export class ProductDetailComponent implements OnInit {
     ngOnInit() {
         if (!this.product) {
             let id = +this._routeParams.get('id');
+            this.pageTitle += `: ${id}`;
             this.getProduct(id);
         }
     }
@@ -34,7 +34,7 @@ export class ProductDetailComponent implements OnInit {
             error => this.errorMessage = <any>error);
     }
 
-    onBack() {
+    onBack(): void {
         this._router.navigate(['Products']);
     }
 
