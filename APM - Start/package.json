@@ -1,34 +1,32 @@
 {
-  "name": "product-management",
-  "version": "1.0.0",
-  "author": "Deborah Kurata",
-  "description": "Package for the Acme Product Management sample application",
-  "scripts": {
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "live": "live-server",
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "typings" : "typings",
-    "postinstall": "typings install"
-  },
-  "license": "ISC",
-  "dependencies": {
-    "angular2": "2.0.0-beta.7",
-    "systemjs": "0.19.22",
-    "es6-promise": "^3.0.2",
-    "es6-shim": "^0.33.3",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.2",
-    "zone.js": "0.5.15",
-    "bootstrap": "^3.3.6"
-  },
-  "devDependencies": {
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.1.0",
-    "live-server": "^0.9.2",
-    "typescript": "^1.8.2",
-    "typings":"^0.6.8"
-  }, 
-  "repository": {  } 
+    "name": "product-management",
+    "version": "1.0.0",
+    "author": "Deborah Kurata",
+    "description": "Package for the Acme Product Management sample application",
+    "scripts": {
+        "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+        "lite": "lite-server",
+        "typings": "typings",
+        "postinstall": "typings install"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "angular2": "2.0.0-beta.11",
+        "systemjs": "0.19.24",
+        "es6-promise": "^3.0.2",
+        "es6-shim": "^0.35.0",
+        "reflect-metadata": "0.1.2",
+        "rxjs": "5.0.0-beta.2",
+        "zone.js": "0.6.4",
+        "bootstrap": "^3.3.6"
+    },
+    "devDependencies": {
+        "concurrently": "^2.0.0",
+        "lite-server": "^2.1.0",
+        "typescript": "^1.8.9",
+        "typings": "^0.7.9"
+    },
+    "repository": {}
 }
