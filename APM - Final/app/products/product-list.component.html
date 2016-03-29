@@ -48,11 +48,14 @@
                             {{product.productName}}
                             </a>
                         </td>
-                        <td>{{ product.productCode }}</td>
+                        <td>{{ product.productCode | lowercase }}</td>
                         <td>{{ product.releaseDate }}</td>
-                        <td>{{ product.price | currency:'USD':true }}</td>
-                        <td><in-star [rating]='product.starRating'
-                            (ratingClicked)='onRatingClicked($event)'></in-star></td>
+                        <td>{{ product.price | currency:'USD':true:'1.2-2' }}</td>
+                        <td>
+                            <ai-star [rating]='product.starRating'
+                                    (ratingClicked)='onRatingClicked($event)'>
+                            </ai-star>
+                       </td>
                     </tr>
                 </tbody>
             </table>

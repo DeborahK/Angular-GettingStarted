@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from 'angular2/core';
+import {  PipeTransform, Pipe } from 'angular2/core';
 import { IProduct } from './product';
 
 @Pipe({
@@ -6,8 +6,9 @@ import { IProduct } from './product';
 })
 export class ProductFilterPipe implements PipeTransform {
 
-    transform(value: any, args: string[]): any {
-        let filter = args[0].toLocaleLowerCase();
-        return filter ? value.filter((product:IProduct)=> product.productName.toLocaleLowerCase().indexOf(filter) != -1) : value;
+    transform(value: IProduct[], args: string[]): IProduct[] {
+        let filter: string = args[0] ? args[0].toLocaleLowerCase() : null;
+        return filter ? value.filter((product:IProduct)=> 
+            product.productName.toLocaleLowerCase().indexOf(filter) != -1) : value;
     }
 }

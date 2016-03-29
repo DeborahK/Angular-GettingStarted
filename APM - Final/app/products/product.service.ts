@@ -1,13 +1,14 @@
 import { Injectable } from 'angular2/core';
 import { Http, Response } from 'angular2/http';
 import { Observable } from 'rxjs/Observable';
+
 import { IProduct } from './product';
 
 @Injectable()
 export class ProductService {
-    constructor(private _http: Http) { }
-
     private _productUrl = 'api/products/products.json';
+
+    constructor(private _http: Http) { }
 
     getProducts(): Observable<IProduct[]> {
         return this._http.get(this._productUrl)
