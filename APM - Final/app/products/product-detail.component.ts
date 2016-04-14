@@ -22,7 +22,7 @@ export class ProductDetailComponent implements OnInit {
     ngOnInit() {
         if (!this.product) {
             let id = +this._routeParams.get('id');
-            //this.pageTitle += `: ${id}`;
+            // this.pageTitle += `: ${id}`;
             this.getProduct(id);
         }
     }
