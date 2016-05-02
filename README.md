@@ -11,8 +11,8 @@ If you are have any problems installing or running this code, please see the ["A
 
 If that does not resolve your issue, please post to the [discussion board for the course](https://app.pluralsight.com/library/courses/angular-2-getting-started/discussion)
 
-NOTE: The sample files here have been updated to *Beta 15*. At this point in time, there is no plan to update these files to a more recent beta/rc because as of *beta 16*, there are *breaking changes* that would cause the files here to mismatch with the demos presented in the course.
+<b>NOTE: The sample files here have been updated to <i>Beta 15</i>. At this point in time, there is no plan to update these files to a more recent beta/rc because as of <i>beta 16</i>, there are <i>breaking changes</i> that would cause the files here to mismatch with the demos presented in the course.
 
-We are currently discussing the appropriate time to update the course and at that time, these files will be updated.
+We are currently discussing the appropriate time to update the course and at that time, these files will be updated.</b>
 
 NOTE: The installation was tested using node v5.0.0 and npm 3.3.6.
