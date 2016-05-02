@@ -13,6 +13,6 @@ If that does not resolve your issue, please post to the [discussion board for th
 
 <b>NOTE: The sample files here have been updated to <i>Beta 15</i>. At this point in time, there is no plan to update these files to a more recent beta/rc because as of <i>Beta 16</i>, there are <i>breaking changes</i> that would cause the files here to mismatch with the demos presented in the course.
 
-We are currently discussing the appropriate time to update the course and at that time, these files will be updated.</b>
+We are currently discussing the appropriate time to update the course and at that time, these files will be updated to the current version.</b>
 
 NOTE: The installation was tested using node v5.0.0 and npm 3.3.6.
