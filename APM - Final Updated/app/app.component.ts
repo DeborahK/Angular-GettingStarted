@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HTTP_PROVIDERS } from '@angular/http';
 import 'rxjs/Rx';   // Load all features
-import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from '@angular/router-deprecated';
+import { ROUTER_PROVIDERS, Routes, ROUTER_DIRECTIVES } from '@angular/router';
 
 import { ProductListComponent } from './products/product-list.component';
 import { ProductService } from './products/product.service';
@@ -16,8 +16,8 @@ import { ProductDetailComponent } from './products/product-detail.component';
             <div class='container-fluid'>
                 <a class='navbar-brand'>{{pageTitle}}</a>
                 <ul class='nav navbar-nav'>
-                    <li><a [routerLink]="['Welcome']">Home</a></li>
-                    <li><a [routerLink]="['Products']">Product List</a></li>
+                    <li><a [routerLink]="['/welcome']">Home</a></li>
+                    <li><a [routerLink]="['/products']">Product List</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,10 +31,11 @@ import { ProductDetailComponent } from './products/product-detail.component';
                 HTTP_PROVIDERS,
                 ROUTER_PROVIDERS]
 })
-@RouteConfig([
-    { path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true },
-    { path: '/products', name: 'Products', component: ProductListComponent },
-    { path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent }
+@Routes([
+    { path: '/', component: WelcomeComponent },
+    { path: '/welcome', component: WelcomeComponent },
+    { path: '/products', component: ProductListComponent },
+    { path: '/product/:id', component: ProductDetailComponent }
 ])
 export class AppComponent {
     pageTitle: string = 'Acme Product Management';

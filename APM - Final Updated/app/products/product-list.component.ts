@@ -1,5 +1,5 @@
 import { Component, OnInit }  from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router-deprecated';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { IProduct } from './product';
 import { ProductFilterPipe } from './product-filter.pipe';

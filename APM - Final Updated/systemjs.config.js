@@ -24,7 +24,7 @@
     '@angular/http',
     '@angular/platform-browser',
     '@angular/platform-browser-dynamic',
-    '@angular/router-deprecated'
+    '@angular/router'
   ];
 
   // add package entries for angular packages in the form 
