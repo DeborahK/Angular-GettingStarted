@@ -1,9 +1,11 @@
 # Angular2-Getting Started
 Materials for the "Angular 2: Getting Started" course on Pluralsight.
 
-`APM - Start`: The starter files. Use this to code along with the course.
+`APM - Start`: The starter files. Use this to code along with the course. (Updated to <i>Beta 15</i>)
 
-`APM - Final`: The completed files. Use this to see the completed solution from the course.
+`APM - Final`: The completed files. Use this to see the completed solution from the course. (Updated to <i>Beta 15</i>)
+
+`APM - Final Updated`: The completed files UPDATED to a newer version of Angular. These are separate from the files above because as of <i>Beta 16</i> there are <i>breaking changes</i> that cause the files to mismatch with the demos presented in the course.
 
 See the `README.md` file under each folder for details on installing and running the application.
 
@@ -11,8 +13,6 @@ If you have any problems installing or running this code, please see the ["Angul
 
 If that does not resolve your issue, please post to the [discussion board for the course](https://app.pluralsight.com/library/courses/angular-2-getting-started/discussion)
 
-<b>NOTE: The sample files here have been updated to <i>Beta 15</i>. At this point in time, there is no plan to update these files to a more recent beta/rc because as of <i>Beta 16</i>, there are <i>breaking changes</i> that would cause the files here to mismatch with the demos presented in the course.
+<b>NOTE: We are currently discussing the appropriate time to update the course to the current Angular version.</b>
 
-We are currently discussing the appropriate time to update the course and at that time, these files will be updated to the current version.</b>
-
-NOTE: The installation was tested using node v5.0.0 and npm 3.3.6.
+NOTE: The installation was tested using node v5.0.0 and npm 3.8.6.
