@@ -8,4 +8,5 @@
 
 #Changes made to `APM - Final Updated`:
 - 5/9/16  Updated to Beta 16 including changes to the signature for the custom pipe implementation.
-- 5/9/16  Updated to Beta 17 including changes to ngFor to use `let` instead of `#`
+- 5/9/16  Updated to Beta 17 including changes to ngFor to use `let` instead of `#`.
+- 5/9/16  Updated to Release Candidate (RC) 1 including all new starter files and change to @angular npm scoped packages. This uses the router-deprecated to match the routing presented in the course.
