@@ -1,7 +1,7 @@
-import { Component } from 'angular2/core';
-import { HTTP_PROVIDERS } from 'angular2/http';
+import { Component } from '@angular/core';
+import { HTTP_PROVIDERS } from '@angular/http';
 import 'rxjs/Rx';   // Load all features
-import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
+import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from '@angular/router-deprecated';
 
 import { ProductListComponent } from './products/product-list.component';
 import { ProductService } from './products/product.service';

@@ -1,4 +1,5 @@
 {
   "ambientDependencies": {
-"es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"  }
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654"
+  }
 }
