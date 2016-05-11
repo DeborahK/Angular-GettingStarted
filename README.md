@@ -1,7 +1,7 @@
 # Angular2-Getting Started
 Materials for the "Angular 2: Getting Started" course on Pluralsight.
 
-`APM - Start`: The starter files. Use this to code along with the course. (Updated to <i>Beta 15</i>)
+`APM - Start`: The starter files set up for use in VSCode, WebStorm, or other editors. Use this to code along with the course. (Updated to <i>Beta 15</i>)
 
 `APM - Start VS 2015 ASP 4x`: The starter files set up for Visual Studio 2015 using an ASP.NET 4.x project. (Updated to <i>Beta 15</i>)
 
