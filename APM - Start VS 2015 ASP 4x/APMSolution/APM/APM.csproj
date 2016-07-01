@@ -71,7 +71,6 @@
     <Content Include="packages.config" />
     <Content Include="api\products\products.json" />
     <Content Include="app\home\welcome.component.js.map" />
-    <Content Include="app\main.js.map" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
@@ -87,7 +86,6 @@
     <Content Include="app\assets\images\logo.jpg" />
     <Content Include="app\home\welcome.component.html" />
     <Content Include="app\home\welcome.component.js" />
-    <Content Include="app\main.js" />
     <Content Include="app\shared\star.component.css" />
     <Content Include="app\shared\star.component.html" />
     <Content Include="index.html" />

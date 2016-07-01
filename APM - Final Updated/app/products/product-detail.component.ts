@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router, OnActivate, RouteSegment } from '@angular/router';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { IProduct } from './product';
 import { ProductService } from './product.service';
@@ -9,29 +9,40 @@ import { StarComponent } from '../shared/star.component';
     templateUrl: 'app/products/product-detail.component.html',
     directives: [StarComponent]
 })
-export class ProductDetailComponent implements OnActivate {
+export class ProductDetailComponent implements OnInit, OnDestroy {
     pageTitle: string = 'Product Detail';
     product: IProduct;
     errorMessage: string;
+    private sub: any;
 
-    constructor(private _productService: ProductService,
-                private _router: Router) {
+    constructor(private route: ActivatedRoute,
+                private router: Router,
+                private _productService: ProductService) {
     }
 
-    routerOnActivate(curr: RouteSegment): void {
-        let id = +curr.getParam('id');
-        this.getProduct(id);
+    ngOnInit(): void {
+        this.sub = this.route.params.subscribe(
+            params => {
+                let id = +params['id'];
+                this.getProduct(id);
+        });
+    }
+
+    ngOnDestroy() {
+        this.sub.unsubscribe();
     }
 
     getProduct(id: number) {
-        this._productService.getProduct(id)
-            .subscribe(
+        this._productService.getProduct(id).subscribe(
             product => this.product = product,
             error => this.errorMessage = <any>error);
     }
 
     onBack(): void {
-        this._router.navigate(['/products']);
+        this.router.navigate(['/products']);
     }
 
+    onRatingClicked(message: string): void {
+        this.pageTitle = 'Product Detail: ' + message;
+    }
 }

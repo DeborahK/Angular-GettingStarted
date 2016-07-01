@@ -1,5 +1,5 @@
 import { Component, OnInit }  from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Router, ROUTER_DIRECTIVES } from '@angular/router';
 
 import { IProduct } from './product';
 import { ProductFilterPipe } from './product-filter.pipe';
@@ -21,8 +21,8 @@ export class ProductListComponent implements OnInit {
     errorMessage: string;
     products: IProduct[];
 
-
-    constructor(private _productService: ProductService) {
+    constructor(private router: Router,
+                private _productService: ProductService) {
 
     }
 
