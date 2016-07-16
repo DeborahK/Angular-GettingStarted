@@ -1,31 +1,34 @@
-import { Injectable } from 'angular2/core';
-import { Http, Response } from 'angular2/http';
+import { Injectable } from '@angular/core';
+import { Http, Response } from '@angular/http';
+import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/catch';
 
 import { IProduct } from './product';
 
 @Injectable()
 export class ProductService {
-    private _productUrl = 'api/products/products.json';
-
-    constructor(private _http: Http) { }
-
-    getProducts(): Observable<IProduct[]> {
-        return this._http.get(this._productUrl)
-            .map((response: Response) => <IProduct[]> response.json())
-            .do(data => console.log('All: ' +  JSON.stringify(data)))
-            .catch(this.handleError);
+    private _productUrl:string;
+    private _products$: Subject<IProduct[]>; 
+    private productsStore: { products: IProduct[] }; 
+    
+    constructor(private _http: Http) { 
+        this._productUrl = 'api/products/products.json';
+        this.productsStore = { products: [] };
+        this._products$ = <Subject<IProduct[]>>new Subject();
     }
 
-    getProduct(id: number): Observable<IProduct> {
-        return this.getProducts()
-            .map((products: IProduct[]) => products.find(p => p.productId === id));
-    }
+    get products$() {
+        return this._products$.asObservable();
+     }
 
-    private handleError(error: Response) {
-        // in a real world app, we may send the server to some remote logging infrastructure
-        // instead of just logging it to the console
-        console.error(error);
-        return Observable.throw(error.json().error || 'Server error');
+    getProducts() {
+        this._http.get(this._productUrl).map(response => response.json()).subscribe(data => {
+          this.productsStore.products = data;
+          this._products$.next(this.productsStore.products);
+         }, 
+            error => console.log('Could not load products.'));
     }
 }
+
