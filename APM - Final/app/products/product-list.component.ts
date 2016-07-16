@@ -1,5 +1,6 @@
-import { Component, OnInit }  from 'angular2/core';
-import { ROUTER_DIRECTIVES } from 'angular2/router';
+import { Component, OnInit }  from '@angular/core';
+import { Router, ROUTER_DIRECTIVES } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
 
 import { IProduct } from './product';
 import { ProductFilterPipe } from './product-filter.pipe';
@@ -19,10 +20,10 @@ export class ProductListComponent implements OnInit {
     showImage: boolean = false;
     listFilter: string = '';
     errorMessage: string;
-    products: IProduct[];
+    products$: Observable<IProduct[]>;
 
-
-    constructor(private _productService: ProductService) {
+    constructor(private router: Router,
+                private _productService: ProductService) {
 
     }
 
@@ -31,10 +32,8 @@ export class ProductListComponent implements OnInit {
     }
 
     ngOnInit(): void {
-           this._productService.getProducts()
-                     .subscribe(
-                       products => this.products = products,
-                       error =>  this.errorMessage = <any>error);
+      this.products$ = this._productService.products$;
+      this._productService.getProducts();
     }
 
     onRatingClicked(message: string): void {
