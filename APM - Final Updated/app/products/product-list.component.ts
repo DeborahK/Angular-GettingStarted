@@ -1,8 +1,6 @@
 import { Component, OnInit }  from '@angular/core';
-import { Router } from '@angular/router';
 
 import { IProduct } from './product';
-import { StarComponent } from '../shared/star.component';
 import { ProductService } from './product.service';
 
 @Component({
