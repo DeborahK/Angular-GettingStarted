@@ -1,16 +1,13 @@
 import { Component, OnInit }  from '@angular/core';
-import { Router, ROUTER_DIRECTIVES } from '@angular/router';
+import { Router } from '@angular/router';
 
 import { IProduct } from './product';
-import { ProductFilterPipe } from './product-filter.pipe';
 import { StarComponent } from '../shared/star.component';
 import { ProductService } from './product.service';
 
 @Component({
     templateUrl: 'app/products/product-list.component.html',
-    styleUrls: ['app/products/product-list.component.css'],
-    pipes: [ProductFilterPipe],
-    directives: [StarComponent, ROUTER_DIRECTIVES]
+    styleUrls: ['app/products/product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
     pageTitle: string = 'Product List';
@@ -21,8 +18,7 @@ export class ProductListComponent implements OnInit {
     errorMessage: string;
     products: IProduct[];
 
-    constructor(private router: Router,
-                private _productService: ProductService) {
+    constructor(private _productService: ProductService) {
 
     }
 
