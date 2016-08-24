@@ -1,19 +1,19 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
+import { Subscription }       from 'rxjs/Subscription';
+
 import { IProduct } from './product';
 import { ProductService } from './product.service';
-import { StarComponent } from '../shared/star.component';
 
 @Component({
-    templateUrl: 'app/products/product-detail.component.html',
-    directives: [StarComponent]
+    templateUrl: 'app/products/product-detail.component.html'
 })
 export class ProductDetailComponent implements OnInit, OnDestroy {
     pageTitle: string = 'Product Detail';
     product: IProduct;
     errorMessage: string;
-    private sub: any;
+    private sub: Subscription;
 
     constructor(private route: ActivatedRoute,
                 private router: Router,
