@@ -9,4 +9,5 @@ export const productRoutes: Routes = [
   { path: 'product/:id', component: ProductDetailComponent }
 ];
 
-export const productRoutingModule: ModuleWithProviders = RouterModule.forChild(productRoutes);
+export const productRoutingModule: ModuleWithProviders =
+                      RouterModule.forChild(productRoutes);

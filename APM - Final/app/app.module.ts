@@ -10,7 +10,7 @@ import { WelcomeComponent } from './home/welcome.component';
 import { ProductModule } from './products/product.module';
 
 @NgModule({
-  imports: [ 
+  imports: [
     BrowserModule,
     HttpModule,
     appRoutingModule,
