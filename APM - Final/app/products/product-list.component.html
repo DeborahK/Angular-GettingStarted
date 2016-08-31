@@ -36,7 +36,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor='#product of products | productFilter:listFilter'>
+                    <tr *ngFor='let product of products | productFilter:listFilter'>
                         <td>
                             <img *ngIf='showImage'
                                  [src]='product.imageUrl'
@@ -44,7 +44,7 @@
                                  [style.width.px]='imageWidth' 
                                  [style.margin.px]='imageMargin'>
                         </td>
-                        <td> <a [routerLink]="['ProductDetail',{id: product.productId}]">
+                        <td> <a [routerLink]="['/product', product.productId]">
                             {{product.productName}}
                             </a>
                         </td>
