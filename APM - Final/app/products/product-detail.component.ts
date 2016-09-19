@@ -15,13 +15,13 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     errorMessage: string;
     private sub: Subscription;
 
-    constructor(private route: ActivatedRoute,
-                private router: Router,
+    constructor(private _route: ActivatedRoute,
+                private _router: Router,
                 private _productService: ProductService) {
     }
 
     ngOnInit(): void {
-        this.sub = this.route.params.subscribe(
+        this.sub = this._route.params.subscribe(
             params => {
                 let id = +params['id'];
                 this.getProduct(id);
@@ -39,7 +39,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     }
 
     onBack(): void {
-        this.router.navigate(['/products']);
+        this._router.navigate(['/products']);
     }
 
     onRatingClicked(message: string): void {
