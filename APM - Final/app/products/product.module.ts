@@ -6,14 +6,14 @@ import { ProductDetailGuard } from './product-guard.service';
 
 import { ProductFilterPipe } from './product-filter.pipe';
 import { ProductService } from './product.service';
-import { productRoutingModule } from './product.routing';
+import { ProductRoutingModule } from './product-routing.module';
 
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     SharedModule,
-    productRoutingModule
+    ProductRoutingModule
   ],
   declarations: [
     ProductListComponent,
