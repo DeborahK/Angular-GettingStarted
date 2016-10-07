@@ -20,11 +20,13 @@
         <div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
 
         <div class='table-responsive'>
-            <table class='table' *ngIf='products && products.length'>
+            <table class='table'
+                   *ngIf='products && products.length'>
                 <thead>
                     <tr>
                         <th>
-                            <button class='btn btn-primary' (click)='toggleImage()'>
+                            <button class='btn btn-primary'
+                                (click)='toggleImage()'>
                                 {{showImage ? 'Hide' : 'Show'}} Image
                             </button>
                         </th>
@@ -44,7 +46,7 @@
                                  [style.width.px]='imageWidth' 
                                  [style.margin.px]='imageMargin'>
                         </td>
-                        <td> <a [routerLink]="['/product', product.productId]">
+                        <td><a [routerLink]="['/product', product.productId]">
                             {{product.productName}}
                             </a>
                         </td>
