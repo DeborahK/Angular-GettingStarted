@@ -1,19 +1,25 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { RouterModule} from '@angular/router';
 
-import { SharedModule } from '../shared/shared.module';
-
-import { productRouting } from './product.routing';
 import { ProductListComponent } from './product-list.component';
 import { ProductDetailComponent } from './product-detail.component';
+import { ProductDetailGuard } from './product-guard.service';
+
 import { ProductFilterPipe } from './product-filter.pipe';
 import { ProductService } from './product.service';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   imports: [
-    FormsModule,
     SharedModule,
-    productRouting
+    RouterModule.forChild([
+      { path: 'products', component: ProductListComponent },
+      { path: 'product/:id',
+        canActivate: [ ProductDetailGuard],
+        component: ProductDetailComponent
+      }
+    ])
   ],
   declarations: [
     ProductListComponent,
@@ -21,7 +27,8 @@ import { ProductService } from './product.service';
     ProductFilterPipe
   ],
   providers: [
-    ProductService
+    ProductService,
+    ProductDetailGuard
   ]
 })
 export class ProductModule {}
