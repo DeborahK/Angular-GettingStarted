@@ -1,9 +1,13 @@
 # Angular2-Getting Started
 Materials for the ["Angular 2: Getting Started"](http://bit.ly/Angular2-GettingStarted) course on Pluralsight.
 
-`APM - Start`: The starter files set up for use in VSCode, WebStorm, or other editors. Use this to code along with the course. (Updated for <i>Angular 2 final</i>)
+`APM - Start`: The starter files set up for use in VSCode, WebStorm, or other editors. Use this to code along with the course. (Updated for <i>Angular version 2 final</i>)
 
-`APM - Final`: The completed files. Use this to see the completed solution from the course. (Updated for <i>Angular 2 final</i>)
+`APM - Final`: The completed files. Use this to see the completed solution from the course. (Updated for <i>Angular version 2 final</i>)
+
+`APM-Start-Updated`: The starter files set up for use in VSCode, WebStorm, or other editors. Use this to code along with the course. (Updated for <i>Angular version 4</i>)
+
+`APM-Final-Updated`: The completed files. Use this to see the completed solution from the course. (Updated for <i>Angular version 4</i>)
 
 See the `README.md` file under each folder for details on installing and running the application.
 
