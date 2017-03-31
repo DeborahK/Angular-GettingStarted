@@ -5,7 +5,7 @@ Materials for the ["Angular 2: Getting Started"](http://bit.ly/Angular2-GettingS
 
 `APM - Final`: The completed files. Use this to see the completed solution from the course. (Updated for <i>Angular version 2 final</i>)
 
-`APM-Start-Updated`: The starter files set up for use in VSCode, WebStorm, or other editors. (Updated for <i>Angular version 4</i>)
+`APM-Start-Updated`: The starter files set up for use in VSCode, WebStorm, or other editors. (Updated for <i>Angular version 4</i>) NOTE: You can use these files to code along, but they will **NOT** match the course exactly. The folder structure and some of the boilerplate files have been changed since the recording of the course.
 
 `APM-Final-Updated`: The completed files. Use this to see the completed solution from the course. (Updated for <i>Angular version 4</i>)
 
