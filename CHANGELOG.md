@@ -1,5 +1,5 @@
 #Changes made to the course since its release:
-- October 18, 2016 - The course was updated for Angular 2 Final.
+- October 18, 2016 - The course was updated for Angular 2 Final. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-2-getting-started-course-update/
 
 #Changes made to the project files since its release:
 - June 21, 2017 - APM-CLI-Start was added. This is a copy of the starter files set up to work with the Angular CLI.
