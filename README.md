@@ -9,6 +9,8 @@ Materials for the ["Angular 2: Getting Started"](http://bit.ly/Angular2-GettingS
 
 `APM-Final-Updated`: The completed files. (Updated for <i>Angular version 4</i>)
 
+`APM-CLI-Start`: The starter files set up for use with the Angular CLI. NOTE: If you use these files to code along with the course they will **NOT** match the course setup files and will **NOT** match some of the hands-on exercises.
+
 See the `README.md` file under each folder for details on installing and running the application.
 
 If you have any problems installing or running this code, please see the ["Angular 2: Getting Started Problem Solver"](http://blogs.msmvps.com/deborahk/angular-2-getting-started-problem-solver/)
