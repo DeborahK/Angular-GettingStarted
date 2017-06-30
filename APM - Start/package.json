@@ -35,7 +35,7 @@
         "concurrently": "^2.2.0",
         "lite-server": "^2.2.0",
         "tslint": "^3.7.4",
-        "typescript": "^2.0.2",
+        "typescript": "2.3.4",
         "typings": "^1.0.4"
     },
     "repository": {}
