@@ -12,7 +12,7 @@ export class ProductGuardService implements CanActivate {
       alert('Invalid product Id');
       this._router.navigate(['/products']);
       return false;
-    };
+    }
     return true;
   }
 }
