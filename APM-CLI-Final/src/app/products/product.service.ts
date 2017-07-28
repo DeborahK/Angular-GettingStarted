@@ -10,7 +10,7 @@ import { IProduct } from './product';
 
 @Injectable()
 export class ProductService {
-    private _productUrl = './api/products/products.json';
+    private _productUrl = './api/products/productsa.json';
 
     constructor(private _http: HttpClient) { }
 
@@ -37,7 +37,7 @@ export class ProductService {
             // The response body may contain clues as to what went wrong,
             errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
         }
-        console.log(err);
+        console.error(errorMessage);
         return Observable.throw(errorMessage);
     }
 }
