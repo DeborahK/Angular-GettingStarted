@@ -1,4 +1,7 @@
 # Angular2-Getting Started
+
+This is a change from current copy !!!!!! Rajat
+
 Materials for the ["Angular 2: Getting Started"](http://bit.ly/Angular2-GettingStarted) course on Pluralsight.
 
 `APM - Start`: The starter files set up for use in VSCode, WebStorm, or other editors. Use this to code along with the course. (Updated for <i>Angular 2 final</i>)
