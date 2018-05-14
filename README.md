@@ -5,6 +5,8 @@ Materials for the ["Angular: Getting Started"](http://bit.ly/Angular-GettingStar
 
 `APM-Final`: The completed files. Use this to see the completed solution from the course. (Updated for <i>Angular version 4.3 or higher</i>)
 
+`APM-Final V6`: The completed files updated for Angular version 6. (Updated for <i>Angular version 6.0 or higher</i>). The primary changes include: New Angular CLI file structure, RxJs 6.0 changes (pipeable operators, deprecated/new operators, etc), currency pipe changes. NOTE: This version requires Node 8.9 or higher and NPM 5.5.1 or higher.
+
 See the `README.md` file under each folder for details on installing and running the application.
 
 If you have any problems installing or running this code, please see the ["Angular: Getting Started Problem Solver"](http://blogs.msmvps.com/deborahk/angular-2-getting-started-problem-solver/)
