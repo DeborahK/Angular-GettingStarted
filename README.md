@@ -17,4 +17,4 @@ NOTE: The installation was tested using node v6.5.0 and npm 3.10.6.
 
 If you want to work through the course without downloading npm or any of the libraries, try the course with Stackblitz by following this link: https://stackblitz.com/github/DeborahK/Angular-GettingStarted/tree/master/APM-Start
 
-Click the "Fork" button in the upper right to make a copy, then follow along with the course using Stackblitz instead.
+Click the "Fork" button in the upper toolbar to make a copy, then follow along with the course using Stackblitz instead.
