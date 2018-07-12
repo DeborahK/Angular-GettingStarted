@@ -6,6 +6,8 @@
 - October 18, 2016 - The course was updated for Angular 2 Final. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-2-getting-started-course-update/
 
 #Changes made to the project files since its release:
+- July 11, 2018 - The code was replaced with new start and final folders for Angular v6, Angular CLI 6, RxJS 6, Bootstrap 4, and Font Awesome.
+
 - August 10, 2017 - The code was all replaced with new start and final folders that leverage the Angular CLI.
 
 - June 21, 2017 - APM-CLI-Start was added. This is a copy of the starter files set up to work with the Angular CLI.
