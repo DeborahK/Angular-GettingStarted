@@ -13,8 +13,6 @@ If that does not resolve your issue, please post to the [discussion board for th
 
 NOTE: The installation was tested using node v8.10.0 and npm 6.0.1.
 
-Click the "Fork" button in the upper toolbar to make a copy, then follow along with the course using Stackblitz instead.
-
 If you want to work through the course without downloading npm or any of the libraries, try the course with Stackblitz by following this link: https://stackblitz.com/github/DeborahK/Angular-GettingStarted/tree/master/APM-Start
 
 NOTE: If you chose to use Stackblitz, note that it currently does not support reading json files from a folder defined in the angular.json file. Rather, you need to copy the products folder from the api folder to the assets folder. Then modify the productUrl to look in the assets folder: private productUrl = 'assets/products/products.json';
