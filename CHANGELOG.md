@@ -1,4 +1,6 @@
 #Changes made to the course since its release:
+- November 8, 2018 - The course had a few very minor changes for Angular v7, primarily for the Angular CLI prompts. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-getting-started-course-update-for-v7/
+
 - July 11, 2018 - The course was updated to Angular v6. Also updated to Bootstrap 4 with Font Awesome and RxJS 6. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-getting-started-course-update-for-v6/
 
 - August 10, 2017 - The course was updated to incorporate the Angular CLI, use the new v4.3 HttpClient, plus more. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-getting-started-course-update-for-v4-3/
