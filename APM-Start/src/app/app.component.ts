@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular: Getting Started';
+  details = 'We are just getting started. \
+             Please stay tuned!!';
 }
+console.log('test log entry');

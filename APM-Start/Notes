@@ -1,0 +1,15 @@
+What is a decorator?
+  A decorator is a function that adds metadata to a class, its members or its method arguments.
+What are Structural Directives?
+  Modifies the layout of the view. They help the html by adding if and for loops.
+examples:
+  *ngig
+  *ngfor
+Browser modules exposes the above directives in angular.
+
+checklist
+
+
+Angular modules list.
+  http://www.npmjs.com/~angular
+c
