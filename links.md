@@ -25,8 +25,8 @@ Here are some useful links that are referenced in or supplement this course:
 | Angular Routing | https://app.pluralsight.com/library/courses/angular-routing
 | Angular Component Communication | https://app.pluralsight.com/library/courses/angular-component-communication
 | Angular NgRx: Getting Started | https://app.pluralsight.com/library/courses/angular-ngrx-getting-started
-| Angular CLI | https://app.pluralsight.com/library/courses/angular-cli/table-of-contents
-| Play by Play: Angular 2/RxJS/HTTP and RESTful Services with John Papa and Dan Wahlin | https://app.pluralsight.com/library/courses/play-by-play-angular-2-rxjs-http-restful-services-john-papa-dan-wahlin/table-of-contents
-| Angular Fundamentals | https://app.pluralsight.com/library/courses/angular-fundamentals/table-of-contents
-| Angular HTTP Communication | https://app.pluralsight.com/library/courses/angular-http-communication/table-of-contents
-| Unit Testing in Angular | https://app.pluralsight.com/library/courses/unit-testing-angular/table-of-contents
+| Angular CLI | https://app.pluralsight.com/library/courses/angular-cli
+| Play by Play: Angular 2/RxJS/HTTP and RESTful Services with John Papa and Dan Wahlin | https://app.pluralsight.com/library/courses/play-by-play-angular-2-rxjs-http-restful-services-john-papa-dan-wahlin
+| Angular Fundamentals | https://app.pluralsight.com/library/courses/angular-fundamentals
+| Angular HTTP Communication | https://app.pluralsight.com/library/courses/angular-http-communication
+| Unit Testing in Angular | https://app.pluralsight.com/library/courses/unit-testing-angular
