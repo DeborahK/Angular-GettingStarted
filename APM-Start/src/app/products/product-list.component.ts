@@ -4,8 +4,7 @@ import { ProductsService } from './product.service';
 //import { EPROTONOSUPPORT } from 'constants';
 
 @Component( {
-    selector: 'pm-products',
-    templateUrl: './product-list.component.html'    ,
+    templateUrl: './product-list.component.html',
     styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit{
