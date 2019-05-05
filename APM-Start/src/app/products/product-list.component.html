@@ -12,7 +12,8 @@
             </div>
         </div>
 
-        <div class='row'>
+        <div class='row'
+            *ngIf='listFilter'>
             <div class='col-md-6'>
                 <h4>Filtered by: {{listFilter}}</h4>
             </div>
@@ -33,7 +34,7 @@
                         <th>Code</th>
                         <th>Available</th>
                         <th>Price</th>
-                        <th>Star Rating</th>
+                        <th>5 Star Rating</th>
                     </tr>
                 </thead>
                 <tbody>

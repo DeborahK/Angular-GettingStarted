@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
-import { ProductsService } from './product.service';
+import { ProductService } from './product.service';
 //import { EPROTONOSUPPORT } from 'constants';
 
 @Component( {
@@ -12,7 +12,7 @@ export class ProductListComponent implements OnInit{
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
-    errorMEssage: string;
+    errorMessage: string;
 
     _listFilter: string;
     get listFilter(): string {
@@ -26,7 +26,7 @@ export class ProductListComponent implements OnInit{
     filteredProducts: IProduct[];
     products: IProduct [] = [];
 
-    constructor(private productService: ProductsService) {
+    constructor(private productService: ProductService) {
         
     }
     
@@ -50,7 +50,7 @@ export class ProductListComponent implements OnInit{
                 this.products = products;
                 this.filteredProducts = this.products;
             },
-            error => this.errorMEssage = <any>error
+            error => this.errorMessage = <any>error
         );
         
     }   
