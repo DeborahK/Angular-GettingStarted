@@ -102,4 +102,10 @@ export class ProductListComponent implements OnInit{
         this.filteredProducts=this.products;
         this.listFilter='cart';
       }
+
+      onRatingClicked(param:string):void{
+        console.log(`THe rating from nested component to parent component ${param} !`);
+
+        this.pageTitle=param;
+      }
 }
