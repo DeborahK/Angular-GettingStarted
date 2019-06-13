@@ -13,8 +13,16 @@ export class ProductListComponent implements OnInit{
     imageMargin: number=2;
     showImage:boolean=false;
     buttonText:string='Show Image';
-    listFilter:string='Cart';
-    //_listFilter:string;
+    // listFilter:string='Cart';
+    _listFilter:string;
+
+    get listFilter():string{
+      return this._listFilter;
+    }
+    set listFilter(value:string){
+      this._listFilter=value;
+      this.filteredProducts=this.listFilter? this.performFilter(this.listFilter): this.products;
+    }
 
     filteredProducts:IProduct[];
     products:IProduct[]=
@@ -81,5 +89,17 @@ export class ProductListComponent implements OnInit{
       }
       ngOnInit(): void{
         console.log('Ng onInit got triggered');
+      }
+      performFilter(filterBy:string):IProduct[]{
+        filterBy=filterBy.toLowerCase();
+        return this.products.filter((product:IProduct)=>
+      product.productName.toLowerCase().indexOf(filterBy)!==-1);
+      }
+
+      constructor()
+      {
+       
+        this.filteredProducts=this.products;
+        this.listFilter='cart';
       }
 }
