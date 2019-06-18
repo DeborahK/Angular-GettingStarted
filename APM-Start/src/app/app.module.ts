@@ -27,6 +27,7 @@ import {RouterModule} from '@angular/router';
     RouterModule.forRoot([
       {path:'products',component:ProductListComponent},
       {path:'product/:id', component:ProductsDetailComponent},
+      {path:'welcome',component:WelcomeComponent},
       {path:'',redirectTo:'welcome',pathMatch:'full'},
       {path:'**', redirectTo:'welcome',pathMatch:'full'}])
   ],
