@@ -1,6 +1,7 @@
 import { Component,OnInit } from "@angular/core";
 import { IProduct } from "src/app/products/product";
 import { ProductService } from "src/app/products/product.service";
+import { error } from "@angular/compiler/src/util";
 //import { OnInit } from "@angular/core/src/metadata/lifecycle_hooks";
 
 @Component({
@@ -14,6 +15,7 @@ export class ProductListComponent implements OnInit{
     imageMargin: number=2;
     showImage:boolean=false;
     buttonText:string='Show Image';
+    errorMessage:string;
     // listFilter:string='Cart';
     _listFilter:string;
 
@@ -39,9 +41,15 @@ export class ProductListComponent implements OnInit{
       ngOnInit(): void{
         console.log('Ng onInit got triggered');
 
-        this.products=this.productService.getProducts();
+        this.products=this.productService.getProducts().subscribe(
+          products=> {
+            this.products= products;
+            this.filteredProducts=this.products;
+          },
+          error => this.errorMessage=<any> error
+        );
 
-        this.filteredProducts=this.products;
+        
       }
       performFilter(filterBy:string):IProduct[]{
         filterBy=filterBy.toLowerCase();
