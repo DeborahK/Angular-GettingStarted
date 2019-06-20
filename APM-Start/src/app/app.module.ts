@@ -16,8 +16,7 @@ import { ProductModule } from 'src/app/products/product.module';
     WelcomeComponent
   ],
   imports: [
-    BrowserModule,
-  
+    BrowserModule,  
     HttpClientModule ,
     RouterModule.forRoot([
        {path:'welcome',component:WelcomeComponent},
