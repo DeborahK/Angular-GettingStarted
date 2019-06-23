@@ -79,13 +79,3 @@ steps:
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts: drop'
-  
-
-- task: AzureRmWebAppDeployment@4
-  displayName: 'Deploy Azure App Service'
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'connection-to-pipelinesangular'
-    appType: 'webApp'
-    WebAppName: 'pipelinesangularjv'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
