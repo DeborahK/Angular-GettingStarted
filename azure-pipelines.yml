@@ -84,6 +84,8 @@ steps:
 - task: AzureRmWebAppDeployment@4
   displayName: 'Deploy Azure App Service'
   inputs:
-    azureSubscription: '$(Parameters.ConnectedServiceName)'
-    appType: '$(Parameters.WebAppKind)'
-    WebAppName: '$(Parameters.WebAppName)'
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'connection-to-pipelinesangular'
+    appType: 'webApp'
+    WebAppName: 'pipelinesangularjv'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
