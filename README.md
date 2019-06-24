@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/jvargasc/Angular%20-%20Getting%20Started/_apis/build/status/Angular-Getting%20Started-CI?branchName=master)](https://dev.azure.com/jvargasc/Angular%20-%20Getting%20Started/_build/latest?definitionId=38&branchName=master)
+
 # Angular-Getting Started
 Materials for the ["Angular: Getting Started"](http://bit.ly/Angular-GettingStarted) course on Pluralsight.
 
