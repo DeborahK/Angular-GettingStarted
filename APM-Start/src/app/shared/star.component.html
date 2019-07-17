@@ -1,7 +1,8 @@
 <div class="crop"
-     [style.width.px]="starWidth"
-     [title]="rating">
-  <div style="width: 75px">
+     [style.width.px]='starWidth'
+     [title]='raiting'
+     (click)='onClick()'>
+  <div [style.width.px]='divSize'>
     <span class="fa fa-star"></span>
     <span class="fa fa-star"></span>
     <span class="fa fa-star"></span>

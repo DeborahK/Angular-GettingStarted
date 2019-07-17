@@ -1,0 +1,12 @@
+@import '../../styles/colors';
+
+$img-width : 50px;
+
+img{
+    width: $img-width;
+    height: $img-width;
+}
+
+thead{
+    color: $thead-color;
+}
