@@ -1,0 +1,12 @@
+ports:
+  - port: 4200
+    onOpen: open-preview
+tasks:
+  - before: echo N | npm install -g @angular/cli
+    init: >
+      cd APM-Start &&
+      npm install &&
+      cd ..
+    command: >
+      cd APM-Start &&
+      ng serve --host 0.0.0.0 --disable-host-check

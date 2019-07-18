@@ -20,3 +20,6 @@ For the completed code on stackblitz, check out this link: https://stackblitz.co
 NOTE: If you chose to use Stackblitz, note that it currently does not support reading json files from a folder defined in the angular.json file. Rather, you need to copy the products folder from the api folder to the assets folder. Then modify the productUrl to look in the assets folder: private productUrl = 'assets/products/products.json';
 
 Note also that Stackblitz does not seem to recognize the Font Awesome icons. So you will instead see portions of squares.
+
+Alternatively, you can also work through the course using Gitpod, a one-click online IDE for GitHub, by following this link:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DeborahK/Angular-GettingStarted/blob/master/APM-Start/src/app/app.component.html)
