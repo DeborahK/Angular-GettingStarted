@@ -24,6 +24,7 @@ Here are some useful links that are referenced in or supplement this course:
 | Angular: Reactive Forms | https://app.pluralsight.com/library/courses/angular-2-reactive-forms
 | Angular Routing | https://app.pluralsight.com/library/courses/angular-routing
 | Angular Component Communication | https://app.pluralsight.com/library/courses/angular-component-communication
+| RxJS in Angular: Reactive Development | https://app.pluralsight.com/library/courses/rxjs-angular-reactive-development
 | Angular NgRx: Getting Started | https://app.pluralsight.com/library/courses/angular-ngrx-getting-started
 | Angular CLI | https://app.pluralsight.com/library/courses/angular-cli
 | Play by Play: Angular 2/RxJS/HTTP and RESTful Services with John Papa and Dan Wahlin | https://app.pluralsight.com/library/courses/play-by-play-angular-2-rxjs-http-restful-services-john-papa-dan-wahlin
