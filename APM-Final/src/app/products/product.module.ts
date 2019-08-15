@@ -15,7 +15,7 @@ import { SharedModule } from '../shared/shared.module';
         path: 'products/:id',
         canActivate: [ProductDetailGuard],
         component: ProductDetailComponent
-      },
+      }
     ]),
     SharedModule
   ],
