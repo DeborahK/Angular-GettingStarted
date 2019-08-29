@@ -9,6 +9,9 @@ import { IProduct } from './product';
   providedIn: 'root'
 })
 export class ProductService {
+  // If using Stackblitz, replace the url with this line
+  // because Stackblitz can't find the api folder.
+  // private productUrl = 'assets/products/products.json';
   private productUrl = 'api/products/products.json';
 
   constructor(private http: HttpClient) { }
