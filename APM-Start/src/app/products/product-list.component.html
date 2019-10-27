@@ -6,12 +6,12 @@
         <div class='row'>
           <div class='col-md-1'>Filter by:</div>
           <div class='col-md-1'>
-            <input type='text'/>
+            <input type='text' [(ngModel)] = 'listFilter'/>
           </div>
         </div>
         <div class='row'>
       <div class='col-md-1.5'>
-        <h4>Filtered by:</h4>
+        <h4>Filtered by: {{ listFilter }} </h4>
       </div>
         </div>
         <div class='table-responsive'>
@@ -19,8 +19,9 @@
               <thead>
                 <tr>
                   <th>
-                    <button class='btn btn-primary'>
-                      Show Image
+                    <button class='btn btn-primary'
+                    (click) = 'toggleImage()'>
+                      {{showImage? 'Hide' : 'Show'}} Images
                     </button>
                   </th>
                   <th>Product</th>
@@ -31,12 +32,18 @@
                 </tr>
               </thead>
               <tbody>
-               <tr *ngFor = 'let product of products'>
-                  <td></td>
+               <tr *ngFor = 'let product of filteredProducts'>
+                  <td>
+                    <img *ngIf = 'showImage'
+                     [src] = 'product.imageUrl'
+                    [title]= 'product.productName'
+                    [style.width.px] = 'imageWidth'
+                    [style.margin.px] = 'imageMargin'>
+                  </td>
                   <td>{{ product.productName }}</td>
-                  <td>{{ product.productCode }}</td>
+                  <td>{{ product.productCode | lowercase | convertToSpaces : '-'}}</td>
                   <td>{{ product.releaseDate }}</td>
-                  <td>{{ product.price }}</td>
+                  <td>{{ product.price  | currency : 'USD' : 'symbol' : '1.2-2' }}</td>
                   <td>{{ product.starRating}}</td> 
                </tr>
               </tbody>
