@@ -18,7 +18,7 @@ export class ProductListComponent implements OnInit{
     }
     set listFilter(value: string) {
     this._listFilter = value;
-    this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
+    this.filteredProducts = this._listFilter ? this.performFilter(this.listFilter) : this.products;
     }
 
     filteredProducts: IProduct[] = [];
@@ -55,5 +55,8 @@ export class ProductListComponent implements OnInit{
       }
       ngOnInit(): void {
         console.log('In OnInit');
+      }
+      onRatingClicked(message : string) : void {
+        this.pageTitle = 'Product List: ' + message;
       }
 }
