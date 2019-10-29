@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
 import { ProductService } from './product.service';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
     selector: 'pm-products',
@@ -41,7 +42,7 @@ export class ProductListComponent implements OnInit{
             this.products = products
             this.filteredProducts = this.products;
           },
-          
+          error : err => this.errorMessage = err,
         });
       }
       onRatingClicked(message : string) : void {
