@@ -19,7 +19,7 @@ The following are detailed instructions for installing the code so you can code 
 
 0) Ensure you have node installed.
 
-   Use node -v to ensure you have version 10.16.0 or higher before proceeding.
+   At a command prompty, type `node -v` to ensure you have version `10.16.0` or higher before proceeding.
 
 1) Download or clone the code from this repository.
 
