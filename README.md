@@ -23,7 +23,7 @@ The following are detailed instructions for installing the code so you can code 
 
 1) Download or clone the code from this repository.
 
-   If you download as a zip file, but sure to unzip it.
+   If you download as a zip file, be sure to unzip it.
 
 2) Navigate to the APM-Start folder (or APM folder if you renamed it).
 
