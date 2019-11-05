@@ -13,6 +13,32 @@ If that does not resolve your issue, please post to the [discussion board for th
 
 NOTE: The installation was tested using node v10.16.0 and npm 6.9.0.
 
+## INSTALLING THE CODE
+
+The following are detailed instructions for installing the code so you can code along with the course.
+
+0) Ensure you have node installed.
+
+   Use node -v to ensure you have version 10.16.0 or higher before proceeding.
+
+1) Download or clone the code from this repository.
+
+   If you download as a zip file, but sure to unzip it.
+
+2) Navigate to the APM-Start folder (or APM folder if you renamed it).
+
+   There should be a package.json file in this folder.
+
+3) In a command window (or the Command prompt in VS Code), type `npm install`.
+
+   This creates a node_modules folder and installs all packages from the package.json file into that folder. You may see a few warnings during this process, but you should not see any errors.
+   
+4) In the same command window (or the Command property in VS Code), type `npm start`.
+
+   The application should then compile and launch in your default browser.
+   
+If these steps don't work for you, see STACKBLITZ below.
+
 ## STACKBLITZ
 
 If you want to work through the course without downloading npm or any of the libraries, try the course with Stackblitz by following this link: https://stackblitz.com/github/DeborahK/Angular-GettingStarted/tree/master/APM-Start
