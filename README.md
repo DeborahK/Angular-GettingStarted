@@ -11,7 +11,7 @@ If you have any problems installing or running this code, please see the ["Angul
 
 If that does not resolve your issue, please post to the [discussion board for the course](https://app.pluralsight.com/library/courses/angular-2-getting-started-update/discussion)
 
-NOTE: The installation was tested using node v10.16.0 and npm 6.9.0.
+NOTE: The installation was tested using node v12.16.1 and npm 6.13.4.
 
 ## INSTALLING THE CODE
 
