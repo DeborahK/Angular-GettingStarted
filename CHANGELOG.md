@@ -1,7 +1,7 @@
 # Changes made to the course since its release:
-- April 21, 2020 - The course had a few changes for Angular v9. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 8"](https://docs.google.com/document/d/1MZd2D2zeNusKAwl_NYZbWDLzvUlvYicKfYMpFnlOxSs/edit?usp=sharing)
+- April 21, 2020 - The course had a few changes for Angular v9. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 9"](https://docs.google.com/document/d/1MZd2D2zeNusKAwl_NYZbWDLzvUlvYicKfYMpFnlOxSs/edit?usp=sharing)
 
-- August 14, 2019 - The course had a few minor changes for Angular v8 and to provide a local set of images. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 9"](https://docs.google.com/document/d/11LgSHiBhszzplXZkL9q9NEX4pi3uIO24WMeBUM0oZg0/edit?usp=sharing)
+- August 14, 2019 - The course had a few minor changes for Angular v8 and to provide a local set of images. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 8"](https://docs.google.com/document/d/11LgSHiBhszzplXZkL9q9NEX4pi3uIO24WMeBUM0oZg0/edit?usp=sharing)
 
 - November 8, 2018 - The course had a few very minor changes for Angular v7, primarily for the Angular CLI prompts. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-getting-started-course-update-for-v7/
 
