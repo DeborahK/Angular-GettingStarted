@@ -22,5 +22,4 @@ export class ProductDetailGuard implements CanActivate {
     }
     return true;
   }
-
 }

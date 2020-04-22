@@ -4,11 +4,11 @@ import { StarComponent } from './star.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
   declarations: [
     StarComponent
+  ],
+  imports: [
+    CommonModule
   ],
   exports: [
     StarComponent,
