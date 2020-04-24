@@ -27,7 +27,7 @@
                             class="btn btn-primary"
                             (click)='toggleImage()'
                         >
-                            Show Image
+                           {{ showImage ? "Hide image" : "Show Image"}}
                         </button>
                     </th>
                     <th>Product</th>
@@ -54,7 +54,7 @@
                 <td>{{ product.productName }}</td>
                 <td>{{ product.productCode }}</td>
                 <td>{{ product.releaseDate }}</td>
-                <td>{{ product.price }}</td>
+                <td>{{ product.price | currency }}</td>
                 <td>{{ product.starRating}}</td>
 
                 </tr>
