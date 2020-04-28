@@ -29,6 +29,7 @@ import { NotFoundComponent } from './not-found/not-found/not-found.component';
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
       { path: 'products/:id', component: ProductDetailsComponent },
+      { path: 'welcome', component: WelcomeComponent},
       { path: '', redirectTo: 'welcome', pathMatch: 'full'},
       { path: '**', component: NotFoundComponent}
     ])
