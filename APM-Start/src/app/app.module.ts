@@ -2,11 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ProductsListComponent } from './products/products-list.component';
 
 @NgModule({
   // elements of this module that are exported
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductsListComponent
   ],
   // modules that stuff in this module requires
   imports: [
