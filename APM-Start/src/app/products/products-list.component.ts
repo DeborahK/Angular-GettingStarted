@@ -4,16 +4,24 @@ import { IProduct } from './IProduct';
 @Component({
   selector: 'pm-products',
   templateUrl: './products-list.component.html',
-  styleUrls: ['./products-list.component.css']
+  styleUrls: ['./products-list.component.css'],
 })
 export class ProductsListComponent implements OnInit {
-  
+  private _listFilter: string;
+  public get listFilter(): string {
+    return this._listFilter;
+  }
+  public set listFilter(v: string) {
+    this._listFilter = v;
+    this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter): this.products;
+  }
+
   pageTitle = 'Products list';
   imageWidth = 50;
   imageMargin = 2;
   showImages = true;
-  listFilter = 'cart';
-  
+
+  filteredProducts: IProduct[];
   products: IProduct[] = [
     {
       productId: 1,
@@ -36,13 +44,24 @@ export class ProductsListComponent implements OnInit {
       imageUrl: 'assets/images/garden_cart.png',
     },
   ];
+  /**
+   *
+   */
+  constructor() {
+    this.filteredProducts = this.products;
+    this._listFilter = '';
+  }
 
-  toggleImages(){
+  toggleImages() {
     this.showImages = !this.showImages;
+  }
+
+  performFilter(filterBy: string): IProduct[] {
+    const filter = filterBy.toLocaleLowerCase();
+    return this.products.filter(e => e.productName.toLocaleLowerCase().indexOf(filter) !== -1);
   }
 
   ngOnInit(): void {
     console.log('ngOnInit');
   }
-
 }
