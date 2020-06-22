@@ -6,12 +6,13 @@
         <div class="row">
             <div class="col-md-2">Filter by:</div>
             <div class="col-md-4">
-                <input type="text" />
+                <input type="text" [(ngModel)]='listFilter'/>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <h4>Filtered by: </h4>
+                {{listFilter}}
             </div>
         </div>
         <div class="table-responsive">
@@ -19,8 +20,8 @@
                 <thead>
                     <tr>
                         <th>
-                            <button class="btn btn-primary">
-                                Show image
+                            <button class="btn btn-primary" (click)="toggleImages()">
+                                {{showImages ? 'Hide' : 'Show'}} images
                             </button>
                         </th>
                         <th>Product</th>
@@ -33,7 +34,7 @@
                 <tbody>
                     <tr *ngFor='let p of products'>
                         <td>
-                            <img 
+                            <img *ngIf="showImages"
                             [src]='p.imageUrl'
                             [title]='p.productName'
                             [style.width.px]='imageWidth'
@@ -41,9 +42,9 @@
                             >
                         </td>
                         <td>{{p.productName}}</td>
-                        <td>{{p.productCode}}</td>
+                        <td>{{p.productCode | lowercase}}</td>
                         <td>{{p.releaseDate}}</td>
-                        <td>{{p.price}}</td>
+                        <td>{{p.price | currency:'USD': 'symbol': '1.2-2'}}</td>
                         <td>{{p.starRating}}</td>
                     </tr>
                 </tbody>
