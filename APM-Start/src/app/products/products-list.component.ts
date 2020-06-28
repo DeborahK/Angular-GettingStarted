@@ -20,7 +20,6 @@ export class ProductsListComponent implements OnInit {
   imageWidth = 50;
   imageMargin = 2;
   showImages = true;
-  listFilter = 'cart';  
   filteredProducts: IProduct[];
   products: IProduct[] = [
     {
