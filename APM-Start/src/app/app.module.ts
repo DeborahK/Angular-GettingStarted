@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ProductsListComponent } from './products/products-list.component';
+import { StarComponent } from './shared/star.component';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 
 @NgModule({
@@ -11,6 +12,7 @@ import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
   declarations: [
     AppComponent,
     ProductsListComponent,
+    StarComponent,
     ConvertToSpacesPipe
   ],
   // modules that stuff in this module requires
