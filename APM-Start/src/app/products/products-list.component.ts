@@ -10,7 +10,6 @@ export class ProductsListComponent {
   imageMargin = 2;
   showImages = true;
   listFilter = 'cart';
-  
   products: any[] = [
     {
       productId: 1,
@@ -34,7 +33,7 @@ export class ProductsListComponent {
     },
   ];
 
-  toggleImages(){
+  toggleImages() {
     this.showImages = !this.showImages;
   }
 }
