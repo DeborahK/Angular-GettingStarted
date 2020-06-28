@@ -26,8 +26,7 @@ export class ProductsListComponent implements OnInit {
   filteredProducts: IProduct[];
   products: IProduct[];
 
-  constructor(private productService: ProductService) {
-  }
+  constructor(private productService: ProductService) {}
 
   toggleImages() {
     this.showImages = !this.showImages;
@@ -45,7 +44,19 @@ export class ProductsListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.products = this.productService.getProducts();
+    this.productService
+      .getProducts()
+      // httpRequest doesn't start until subscribe is called
+      // subscribe needs an observer or an object that conforms to that interface
+      // which is a fancy way of saying it needs something to handle the data stream
+      .subscribe({
+        next: (response) => {
+          this.products = response;
+          this.filteredProducts = this.products;
+          this.listFilter = '';
+        },
+        error: (err) => console.log(err),
+      });
     this.filteredProducts = this.products;
     this._listFilter = '';
   }
