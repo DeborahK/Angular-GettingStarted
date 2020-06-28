@@ -36,4 +36,8 @@ export class ProductsListComponent {
   toggleImages() {
     this.showImages = !this.showImages;
   }
+
+  onRatingClicked(message: string): void {
+    this.pageTitle = `Product list: ${message}`;
+  }
 }
