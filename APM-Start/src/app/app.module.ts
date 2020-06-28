@@ -13,14 +13,11 @@ import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
     AppComponent,
     ProductsListComponent,
     StarComponent,
-    ConvertToSpacesPipe
+    ConvertToSpacesPipe,
   ],
   // modules that stuff in this module requires
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule],
   // startup module for this module
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
