@@ -94,6 +94,10 @@
         "named": "never"
       }
     },
+    "typedef": [
+      true,
+      "call-signature"
+    ],
     "typedef-whitespace": {
       "options": [
         {
@@ -117,7 +121,7 @@
         "ban-keywords",
         "check-format",
         "allow-pascal-case",
-	"allow-leading-underscore"
+        "allow-leading-underscore"
       ]
     },
     "whitespace": {
