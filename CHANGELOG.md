@@ -1,5 +1,5 @@
 # Changes made to the course since its release:
-- August 6, 2020 - The course had a few changes for Angular v9. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 10"](https://docs.google.com/document/d/14s_d-gmkyj2B4xK7AHwpe5nLVhWg7kp4IgGzNsqPwuE/edit?usp=sharing)
+- August 6, 2020 - The course had a few changes for Angular v10. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 10"](https://docs.google.com/document/d/14s_d-gmkyj2B4xK7AHwpe5nLVhWg7kp4IgGzNsqPwuE/edit?usp=sharing)
 
 - April 21, 2020 - The course had a few changes for Angular v9. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 9"](https://docs.google.com/document/d/11LgSHiBhszzplXZkL9q9NEX4pi3uIO24WMeBUM0oZg0/edit?usp=sharing)
 
