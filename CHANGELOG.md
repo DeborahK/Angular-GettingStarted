@@ -1,4 +1,6 @@
 # Changes made to the course since its release:
+- August 6, 2020 - The course had a few changes for Angular v9. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 10"](https://docs.google.com/document/d/14s_d-gmkyj2B4xK7AHwpe5nLVhWg7kp4IgGzNsqPwuE/edit?usp=sharing)
+
 - April 21, 2020 - The course had a few changes for Angular v9. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 9"](https://docs.google.com/document/d/11LgSHiBhszzplXZkL9q9NEX4pi3uIO24WMeBUM0oZg0/edit?usp=sharing)
 
 - August 14, 2019 - The course had a few minor changes for Angular v8 and to provide a local set of images. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 8"](https://docs.google.com/document/d/1MZd2D2zeNusKAwl_NYZbWDLzvUlvYicKfYMpFnlOxSs/edit?usp=sharing)
@@ -12,6 +14,8 @@
 - October 18, 2016 - The course was updated for Angular 2 Final. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-2-getting-started-course-update/
 
 # Changes made to the project files since its release:
+- August 6, 2020 - The code was replaced with new start and final folders for Angular v10.
+
 - April 21, 2020 - The code was replaced with new start and final folders for Angular v9.
 
 - August 14, 2019 - The code was replaced with new start and final folders for Angular v8.
