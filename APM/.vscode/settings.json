@@ -1,0 +1,5 @@
+{
+  "files.autoSave": "afterDelay",
+  "html.format.wrapAttributes": "force-aligned",
+  "javascript.implicitProjectConfig.experimentalDecorators": true
+}
