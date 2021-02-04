@@ -4,10 +4,12 @@ import { ProductService } from "./product.service";
 
 
 @Component({
-    selector:"pm-products",
+    
     templateUrl:"./product-list.component.html",
     styleUrls:["./product-list.component.css"]
 })
+
+
 export class ProductListComponent 
 implements OnInit
 {
@@ -15,9 +17,10 @@ heading:string ="Product List";
 imageWidth:number= 50;
 imageMargin:number=2;
 showImage:boolean=false;
+errorMessage:string;
 
 
-_listFilter:string="cart";
+_listFilter:string
 
 get listFilter():string{
   return this._listFilter
@@ -46,8 +49,12 @@ products:IProduct[] = [ ];
   }
 
   ngOnInit(): void {
- this.products = this.ProductService.getProducts();
- this.filteredProducts = this.products;
+  this.ProductService.getProducts().subscribe({
+   next: products => {this.products =products;
+    this.filteredProducts = this.products;},
+   error: err => this.errorMessage =err,
+ });
+
   }
 
   toggleImage():void{
