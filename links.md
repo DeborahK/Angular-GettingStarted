@@ -10,11 +10,12 @@ Here are some useful links that are referenced in or supplement this course:
 | Angular documentation | Official Angular documentation | https://angular.io/
 | Angular: Getting Started Problem Solver | Blog post that identifies common issues you may run into when using the sample code in this course, along with solutions. | http://blogs.msmvps.com/deborahk/angular-2-getting-started-problem-solver/
 | Stackblitz | Try out Angular in your browser without downloading anything | https://stackblitz.com/github/DeborahK/Angular-GettingStarted/tree/master/APM-Start
-| TypeScript Playground | Try out TypeScript code in your browser | http://www.typescriptlang.org/Playground/
-| VS Code | Link to a recommended code editor | https://code.visualstudio.com/
+| Angular npm packages | List of Angular npm packages | https://www.npmjs.com/~angular
 | Bootstrap | Link to the style library used in the course | https://getbootstrap.com/
 | Font Awesome | Link to the font library used in the course | https://fontawesome.com
-| Angular npm packages | List of Angular npm packages | https://www.npmjs.com/~angular
+| node/npm | Link to download node and npm | https://nodejs.org/en/download
+| TypeScript Playground | Try out TypeScript code in your browser | https://www.typescriptlang.org/play
+| VS Code | Link to a recommended code editor | https://code.visualstudio.com/
 | Web event docs | Link to the documentation for Web events | https://developer.mozilla.org/en-US/docs/Web/Events
 
 ### Additional Suggested Pluralsight Courses
@@ -30,4 +31,6 @@ Here are some useful links that are referenced in or supplement this course:
 | Play by Play: Angular 2/RxJS/HTTP and RESTful Services with John Papa and Dan Wahlin | https://app.pluralsight.com/library/courses/play-by-play-angular-2-rxjs-http-restful-services-john-papa-dan-wahlin
 | Angular Fundamentals | https://app.pluralsight.com/library/courses/angular-fundamentals
 | Angular HTTP Communication | https://app.pluralsight.com/library/courses/angular-http-communication
+| TypeScript: Getting Started | https://app.pluralsight.com/library/courses/getting-started-typescript
 | Unit Testing in Angular | https://app.pluralsight.com/library/courses/unit-testing-angular
+| Visual Studio Code | https://app.pluralsight.com/library/courses/visual-studio-code
