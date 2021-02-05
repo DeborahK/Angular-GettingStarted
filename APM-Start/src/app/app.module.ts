@@ -6,7 +6,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import {HttpClientModule} from "@angular/common/http";
-import { ProductModule } from './products/product.module'
+import { ProductModule } from './products/product.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductModule } from './products/product.module'
     BrowserModule,
     HttpClientModule,
     ProductModule,
-    AppRoutingModule ,
+    AppRoutingModule,
+    BrowserAnimationsModule ,
   ],
   bootstrap: [AppComponent]
 })
