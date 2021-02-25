@@ -13,6 +13,7 @@ Here are some useful links that are referenced in or supplement this course:
 | Angular npm packages | List of Angular npm packages | https://www.npmjs.com/~angular
 | Bootstrap | Link to the style library used in the course | https://getbootstrap.com/
 | Font Awesome | Link to the font library used in the course | https://fontawesome.com
+| JavaScript Array filter function | Link to the documentation | https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 | node/npm | Link to download node and npm | https://nodejs.org/en/download
 | TypeScript Playground | Try out TypeScript code in your browser | https://www.typescriptlang.org/play
 | VS Code | Link to a recommended code editor | https://code.visualstudio.com/
