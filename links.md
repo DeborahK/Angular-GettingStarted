@@ -32,6 +32,7 @@ Here are some useful links that are referenced in or supplement this course:
 | Angular NgRx: Getting Started | https://app.pluralsight.com/library/courses/angular-ngrx-getting-started
 | Angular CLI | https://app.pluralsight.com/library/courses/angular-cli
 | Play by Play: Angular 2/RxJS/HTTP and RESTful Services with John Papa and Dan Wahlin | https://app.pluralsight.com/library/courses/play-by-play-angular-2-rxjs-http-restful-services-john-papa-dan-wahlin
+| Angular Forms | https://app.pluralsight.com/library/courses/angular-forms
 | Angular Fundamentals | https://app.pluralsight.com/library/courses/angular-fundamentals
 | Angular HTTP Communication | https://app.pluralsight.com/library/courses/angular-http-communication
 | TypeScript: Getting Started | https://app.pluralsight.com/library/courses/getting-started-typescript
