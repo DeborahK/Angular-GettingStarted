@@ -1,10 +1,10 @@
-<div class='card'
-     *ngIf='product'>
+<div class='card'>
   <div class='card-header'>
-    {{pageTitle + ': ' + product.productName}}
+    {{pageTitle + ': ' + product?.productName}}
   </div>
 
-  <div class='card-body'>
+  <div class='card-body'
+       *ngIf='product'>
     <div class='row'>
       <div class='col-md-8'>
         <div class='row'>
@@ -48,8 +48,8 @@
 
   <div class='card-footer'>
     <button class='btn btn-outline-secondary'
-            (click)='onBack()'
-            style='width:80px'>
+            style='width:80px'
+            (click)='onBack()'>
       <i class='fa fa-chevron-left'></i> Back
     </button>
   </div>
