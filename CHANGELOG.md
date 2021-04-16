@@ -1,4 +1,6 @@
 # Changes made to the course since its release:
+- March 22, 2021 - Extensive updates to the course including an upgrade of the capture resolution to 1920 x1080, simplified the terminology in several areas based on learner feedback, enhanced several topics based on learner feedback, and "live typed" more of the code in the demos. For details on the list of course changes, see ["Angular: Getting Started Course Update for version 11"](https://docs.google.com/document/d/1m_YB-O1pe5y3KVZdetAIQu6UcgvrUYQ1dL08-VXcX7k/edit?usp=sharing)
+
 - August 6, 2020 - The course had a few changes for Angular v10. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 10"](https://docs.google.com/document/d/14s_d-gmkyj2B4xK7AHwpe5nLVhWg7kp4IgGzNsqPwuE/edit?usp=sharing)
 
 - April 21, 2020 - The course had a few changes for Angular v9. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 9"](https://docs.google.com/document/d/11LgSHiBhszzplXZkL9q9NEX4pi3uIO24WMeBUM0oZg0/edit?usp=sharing)
@@ -14,6 +16,8 @@
 - October 18, 2016 - The course was updated for Angular 2 Final. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-2-getting-started-course-update/
 
 # Changes made to the project files since its release:
+- March 22, 2020 - The code was replaced with new start and final folders for Angular v11. Added unsubscribing of our Observable. Also added TypeScript strict mode and made a few minor coding changes to support that change.
+
 - August 6, 2020 - The code was replaced with new start and final folders for Angular v10.
 
 - April 21, 2020 - The code was replaced with new start and final folders for Angular v9.
