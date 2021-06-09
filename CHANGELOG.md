@@ -1,6 +1,6 @@
 # Changes made to the course since its release:
 - June 9, 2021 - The course had a few changes for Angular v12. For details on the list of course changes, see ["Angular: Getting Started Course Update for version 12"](https://docs.google.com/document/d/17nBp_ucfuqdUnzje9RyrrDF81dIv7JojxgutSntbjwg/edit?usp=sharing)
-- 
+
 - March 22, 2021 - Extensive updates to the course including an upgrade of the capture resolution to 1920 x1080, simplified the terminology in several areas based on learner feedback, enhanced several topics based on learner feedback, and "live typed" more of the code in the demos. For details on the list of course changes, see ["Angular: Getting Started Course Update for version 11"](https://docs.google.com/document/d/1m_YB-O1pe5y3KVZdetAIQu6UcgvrUYQ1dL08-VXcX7k/edit?usp=sharing)
 
 - August 6, 2020 - The course had a few changes for Angular v10. For details on the list of course changes, see: ["Angular: Getting Started Course Update for version 10"](https://docs.google.com/document/d/14s_d-gmkyj2B4xK7AHwpe5nLVhWg7kp4IgGzNsqPwuE/edit?usp=sharing)
