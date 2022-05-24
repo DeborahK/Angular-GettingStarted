@@ -8,12 +8,23 @@ import { Product } from "./product";
 })
 export class ProductListComponent implements OnInit{
 
-    listFilter: string = 'cart'
+    
 
     imageWidth: number = 50;
     imageMargin: number = 2;
     pageTitle: string = 'Product List';
     showImages: boolean = false
+
+    private _listFiler: string = '';
+    get listFiler(): string{
+        return this._listFiler;
+    } 
+
+    set listFilter(value: string){
+        this._listFiler = value;
+        console.log('In setter: ', value)
+    }
+
     products: Product[] = [
         {
           "productId": 1,
@@ -72,7 +83,7 @@ export class ProductListComponent implements OnInit{
     } 
 
     ngOnInit(): void{
-        console.log('In OnInit')
+        this.listFilter = 'cart';
     }
 
 }
