@@ -1,0 +1,53 @@
+<div class="card">
+    <div class="card-header">
+        {{ pageTitle }}
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">Filter by:</div>
+            <div class="col-md-4">
+                <input [(ngModel)]='listFilter' type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Filtered by: {{ listFilter }} </h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf=" products.length > 0">
+                <thead>
+                    <tr>
+                        <th>
+                            <button (click)='toggleImages()' class="btn btn-primary">
+                                {{ showImages ? 'Hide' : 'Show' }} Images
+                            </button>
+                        </th>
+                        <th>Product</th>
+                        <th>Code</th>
+                        <th>Available</th>
+                        <th>Price</th>
+                        <th>Start Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td>
+                            <img *ngIf="showImages"
+                            [src]="product.imageUrl" 
+                            [title]="product.productName"
+                            [style.width.px] = "imageWidth"
+                            [style.margin.px] = "imageMargin"
+                            >
+                        </td>
+                        <td>{{ product.productName }}</td>
+                        <td>{{ product.productCode | lowercase}}</td>
+                        <td>{{ product.releaseDate }}</td>
+                        <td>{{ product.price | currency:'USD':'symbol':'1.2-2' }}</td>
+                        <td>{{ product.starRating }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
