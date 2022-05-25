@@ -19,10 +19,14 @@ export class ProductListComponent implements OnInit{
     get listFiler(): string{
         return this._listFiler;
     } 
-
     set listFilter(value: string){
         this._listFiler = value;
-        console.log('In setter: ', value)
+        this.filteredProducts = this.performFilter(value);
+    }
+
+    performFilter(filterBy: string): Product[]{
+      filterBy = filterBy.toLocaleLowerCase();
+      return this.products.filter((product: Product) => product.productName.toLocaleLowerCase().includes(filterBy))
     }
 
     products: Product[] = [
@@ -78,6 +82,8 @@ export class ProductListComponent implements OnInit{
         }
     ];
     
+    filteredProducts: Product[] = [];
+
     toggleImages(): void {
         this.showImages = !this.showImages;
     } 
