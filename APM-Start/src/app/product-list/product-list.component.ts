@@ -29,6 +29,10 @@ export class ProductListComponent implements OnInit{
       return this.products.filter((product: Product) => product.productName.toLocaleLowerCase().includes(filterBy))
     }
 
+    onRatingClicked(message: string): void{
+      this.pageTitle = 'Product List: ' + message;
+    }
+
     products: Product[] = [
         {
           "productId": 1,
@@ -89,7 +93,7 @@ export class ProductListComponent implements OnInit{
     } 
 
     ngOnInit(): void{
-        this.listFilter = 'cart';
+        this.listFilter = '';
     }
 
 }
