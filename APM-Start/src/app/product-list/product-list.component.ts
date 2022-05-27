@@ -1,4 +1,6 @@
-import { Component, OnInit } from "@angular/core";
+import { NullTemplateVisitor } from "@angular/compiler";
+import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Subscription } from "rxjs";
 import { Product } from "./product";
 import { ProductService } from "./product.service";
 
@@ -17,6 +19,9 @@ export class ProductListComponent implements OnInit{
     showImages: boolean = false
     products: Product[] = [];
     filteredProducts: Product[] = [];
+    errorMessage: string = '';
+    sub!: Subscription;
+
 
     private _listFiler: string = '';
     get listFiler(): string{
@@ -42,8 +47,16 @@ export class ProductListComponent implements OnInit{
 
     ngOnInit(): void{
         this.listFilter = '';
-        this.products = this.productService.getProducts()
-        this.filteredProducts = this.products
+        this.sub = this.productService.getProducts().subscribe({
+            next: products => {
+                this.products = products;
+                this.filteredProducts = products;
+            },
+            error: e => this.errorMessage = e
+        });
     }
 
+    ngOnDestroy(): void{
+        this.sub.unsubscribe();
+    }
 }
