@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable, throwError } from "rxjs";
-import { catchError, map, tap } from 'rxjs/operators';
+import { Observable, catchError, tap, throwError, map } from "rxjs";
+
 import { IProduct } from "./product";
 
 @Injectable({
@@ -46,7 +46,7 @@ export class ProductService {
       errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
     }
     console.error(errorMessage);
-    return throwError(errorMessage);
+    return throwError(() => errorMessage);
   }
 
 }
