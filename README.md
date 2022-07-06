@@ -50,6 +50,4 @@ To install packages in Stackblitz, such as bootstrap and font-awesome, you need 
 4) If it asks you to install missing dependencies, click "INSTALL MISSING DEPENDENCIES"
 5) Repeat step 3 with font-awesome
 
-Stackblitz does not seem to recognize the Font Awesome icons. So you will instead see portions of squares.
-
 Stackbliz has the Angular CLI commands built in. Instead of installing the Angular CLI to your system, right-click on a folder in Stackblitz and you'll see an "Angular Generator" option. Under that menu you'll find the Angular CLI commands.
