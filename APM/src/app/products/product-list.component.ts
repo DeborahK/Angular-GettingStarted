@@ -13,7 +13,18 @@ export class ProductListComponent implements OnInit{
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
-    listFilter: string = '';
+    
+    private _listFilter: string = '';
+
+    get listFilter(): string {
+        return this._listFilter;
+    }
+
+    set listFilter(_listFilter: string) {
+        this._listFilter = _listFilter;
+        console.log('In Setter: ', _listFilter);
+    }
+
     products: IProduct[] = [
         {
             "productId": 1,
@@ -72,6 +83,6 @@ export class ProductListComponent implements OnInit{
     }
 
     ngOnInit(): void {
-        throw new Error("Method not implemented.");
+        this.listFilter;
     }
 }
