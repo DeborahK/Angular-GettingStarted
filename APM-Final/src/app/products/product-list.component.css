@@ -2,8 +2,12 @@ thead {
   color: #337AB7;
 }
 
-table tr:not(:first-child):hover {
+/*table tr:not(:first-child):hover {
   background-color: lightgreen;
   cursor: pointer;
+}*/
+
+.notfirst:hover {
+  background-color: lightgreen;
 }
 
