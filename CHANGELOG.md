@@ -20,6 +20,8 @@
 - October 18, 2016 - The course was updated for Angular 2 Final. For details on the list of course changes, see: https://blogs.msmvps.com/deborahk/angular-2-getting-started-course-update/
 
 # Changes made to the project files since its release:
+- May 24, 2023 - Added a folder for Angular v16. NOTE: The code in this folder does *NOT* match the code as shown in the course. The code in this folder includes: standalone components, standalone bootstrapping, computed signals.
+
 - July 6, 2022 - The code was replaced with new start and final folders for Angular v14 and RxJS v7.5.
 
 - June 9, 2021 - The code was replaced with new start and final folders for Angular v12 and Bootstrap 5.
