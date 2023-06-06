@@ -8,5 +8,9 @@ export const routes: Routes = [
     path: 'products',
     loadChildren: () => import('./products/product.routes').then(r => r.PRODUCT_ROUTES)
   },
+  { 
+    path: 'about', 
+    loadComponent: () => import('./about/about.component').then(c => c.AboutComponent)
+  },
   { path: '**', redirectTo: 'welcome', pathMatch: 'full' },
 ];
