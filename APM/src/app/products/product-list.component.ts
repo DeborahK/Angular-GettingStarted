@@ -31,4 +31,9 @@ export class ProductListComponent {
             "imageUrl": "assets/images/garden_cart.png"
           }
     ];
+    showImage: boolean = false;
+
+    toggleImage(): void {
+        this.showImage = !this.showImage;
+    }
 }
