@@ -11,3 +11,4 @@ bower_components
 bin
 obj
 packages
+in-progress/*
