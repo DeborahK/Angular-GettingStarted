@@ -12,6 +12,10 @@ export class ProductListComponent implements OnInit{
     imageWidth: number = 50;
     imageMargin: number = 2;
     filteredProducts: IProduct[] = [];
+    onRatingClicked(message: string): void {
+        this.pageTitle = 
+        'Product List: ' + message;
+    };
     products: IProduct[] = [
         {
             "productId": 1,
