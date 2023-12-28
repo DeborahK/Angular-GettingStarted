@@ -34,10 +34,20 @@ export class ProductListComponent implements OnInit{
           }
     ];
     showImage: boolean = false;
-    listFilter: string = 'cart';
+
+    private _listFilter: string = '';
+
+    get listFilter(): string {
+        return this._listFilter;
+    }
+
+    set listFilter(value: string) {
+        this._listFilter = value;
+        console.log('in setter: ', value)
+    }
 
     ngOnInit(): void {
-        
+        this.listFilter = 'cart';
     }
 
     toggleImage(): void {
