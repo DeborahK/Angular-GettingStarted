@@ -66,3 +66,23 @@ To install packages in Stackblitz, such as bootstrap and font-awesome, you need 
 5) Repeat step 3 with font-awesome
 
 Stackbliz has the Angular CLI commands built in. Instead of installing the Angular CLI to your system, right-click on a folder in Stackblitz and you'll see an "Angular Generator" option. Under that menu you'll find the Angular CLI commands.
+
+## FAQ
+
+I'm using `thead` to change the color of the heading and it doesn't work. Why?
+
+Code:
+```
+thead {
+color: #337AB7;
+}
+```
+
+For some reason, the thead no longer seems to work. Use `th` instead. (This is a CSS issue, not an Angular issue.)
+
+Code:
+```
+th {
+color: #337AB7;
+}
+```
