@@ -1,4 +1,4 @@
 {
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
   "html.format.wrapAttributes": "force-aligned"
 }
